@@ -1,1 +1,0 @@
-# taller3_bootstrap_git
