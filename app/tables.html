@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tabla Moderna Bootstrap</title><!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .3);
+        }
+
+        .card-header {
+            background: linear-gradient(45deg, #0d6efd, #00c6ff);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card-header h2 {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .table {
+            margin-bottom: 0;
+        }
+
+        .table thead {
+            background-color: #212529;
+            color: white;
+        }
+
+        .table tbody tr {
+            transition: all .3s ease;
+        }
+
+        .table tbody tr:hover {
+            background-color: #dbeafe;
+            transform: scale(1.01);
+        }
+
+        .table td,
+        .table th {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .badge-custom {
+            background: #198754;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h2>📋 Listado de Usuarios</h2>
+            </div>
+
+            <div class="card-body">
+
+                <div class="table-responsive">
+
+                    <table class="table table-bordered table-striped table-hover">
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Correo</th>
+                                <th>Teléfono</th>
+                                <th>Ciudad</th>
+                                <th>Cargo</th>
+                                <th>Edad</th>
+                                <th>Estado</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>Juan</td>
+                                <td>Pérez</td>
+                                <td>juan@mail.com</td>
+                                <td>3001111111</td>
+                                <td>Medellín</td>
+                                <td>Analista</td>
+                                <td>25</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Ana</td>
+                                <td>Gómez</td>
+                                <td>ana@mail.com</td>
+                                <td>3002222222</td>
+                                <td>Bogotá</td>
+                                <td>Diseñadora</td>
+                                <td>28</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Carlos</td>
+                                <td>Ruiz</td>
+                                <td>carlos@mail.com</td>
+                                <td>3003333333</td>
+                                <td>Cali</td>
+                                <td>Programador</td>
+                                <td>30</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Laura</td>
+                                <td>Torres</td>
+                                <td>laura@mail.com</td>
+                                <td>3004444444</td>
+                                <td>Pereira</td>
+                                <td>Contadora</td>
+                                <td>27</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>David</td>
+                                <td>Rojas</td>
+                                <td>david@mail.com</td>
+                                <td>3005555555</td>
+                                <td>Manizales</td>
+                                <td>Ingeniero</td>
+                                <td>29</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Sara</td>
+                                <td>Castro</td>
+                                <td>sara@mail.com</td>
+                                <td>3006666666</td>
+                                <td>Neiva</td>
+                                <td>Abogada</td>
+                                <td>31</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Mateo</td>
+                                <td>Díaz</td>
+                                <td>mateo@mail.com</td>
+                                <td>3007777777</td>
+                                <td>Ibagué</td>
+                                <td>Administrador</td>
+                                <td>35</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Valentina</td>
+                                <td>Moreno</td>
+                                <td>vale@mail.com</td>
+                                <td>3008888888</td>
+                                <td>Armenia</td>
+                                <td>Docente</td>
+                                <td>26</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Sebastián</td>
+                                <td>Ramírez</td>
+                                <td>sebas@mail.com</td>
+                                <td>3009999999</td>
+                                <td>Montería</td>
+                                <td>Técnico</td>
+                                <td>24</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Camila</td>
+                                <td>Vargas</td>
+                                <td>camila@mail.com</td>
+                                <td>3010000000</td>
+                                <td>Sincelejo</td>
+                                <td>Auxiliar</td>
+                                <td>23</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Andrés</td>
+                                <td>Ortiz</td>
+                                <td>andres@mail.com</td>
+                                <td>3011111111</td>
+                                <td>Tunja</td>
+                                <td>Supervisor</td>
+                                <td>32</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Daniela</td>
+                                <td>León</td>
+                                <td>daniela@mail.com</td>
+                                <td>3012222222</td>
+                                <td>Popayán</td>
+                                <td>Psicóloga</td>
+                                <td>29</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Nicolás</td>
+                                <td>Gil</td>
+                                <td>nico@mail.com</td>
+                                <td>3013333333</td>
+                                <td>Pasto</td>
+                                <td>Analista</td>
+                                <td>27</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Juliana</td>
+                                <td>Muñoz</td>
+                                <td>juliana@mail.com</td>
+                                <td>3014444444</td>
+                                <td>Villavicencio</td>
+                                <td>Diseñadora</td>
+                                <td>25</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Felipe</td>
+                                <td>Herrera</td>
+                                <td>felipe@mail.com</td>
+                                <td>3015555555</td>
+                                <td>Cúcuta</td>
+                                <td>Ingeniero</td>
+                                <td>33</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>Paula</td>
+                                <td>Navarro</td>
+                                <td>paula@mail.com</td>
+                                <td>3016666666</td>
+                                <td>Riohacha</td>
+                                <td>Abogada</td>
+                                <td>28</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>Kevin</td>
+                                <td>Suárez</td>
+                                <td>kevin@mail.com</td>
+                                <td>3017777777</td>
+                                <td>Yopal</td>
+                                <td>Programador</td>
+                                <td>24</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>Luisa</td>
+                                <td>Acosta</td>
+                                <td>luisa@mail.com</td>
+                                <td>3018888888</td>
+                                <td>Florencia</td>
+                                <td>Docente</td>
+                                <td>30</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>Jorge</td>
+                                <td>Parra</td>
+                                <td>jorge@mail.com</td>
+                                <td>3019999999</td>
+                                <td>Quibdó</td>
+                                <td>Técnico</td>
+                                <td>34</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Sofía</td>
+                                <td>Molina</td>
+                                <td>sofia@mail.com</td>
+                                <td>3020000000</td>
+                                <td>Leticia</td>
+                                <td>Administradora</td>
+                                <td>26</td>
+                                <td>Activo</td>
+                                <td>Editar</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+                </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
